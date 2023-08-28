@@ -5,12 +5,14 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Navbar from "./components/NavBar";
 
 
+
+
 function App() {
   return (
     <div>
       
       <Navbar> </Navbar>
-      <h1>Tienda</h1>
+      <h1></h1>
       <Routes>
         <Route path="" element= {<ItemListContainer/>}/>
         <Route path="/category/:categoryId" element = {<ItemListContainer/>} />

@@ -1,6 +1,6 @@
 const products = [
-    {id: "1", name: "Apple AirPods Pro", price: 500, category: "Inalambricos" },
-    {id: "2", name: "HeadPhones Bluetooth Marshal", price: 700, category: "Inalambricos" },
+    {id: "1", name: "Apple AirPods Pro", price: 500, category: "Inalambricos", Image: "./assets/imagenes/airpod.jpeg"},
+    {id: "2", name: "HeadPhones Bluetooth Marshal", price: 700, category: "Inalambricos", Image : "/Users/mariannamunarriz/Desktop/vite/app/src/assets/imagenes/marshall.jpeg"},
     {id: "3", name: "Headphones Bluetooth JBL", price: 400, category: "Inalambricos" },
     {id: "4", name: "Auriculares Marshal Minor III Black ", price: 600, category: "Inalambricos" },
     ///gamers
@@ -11,7 +11,7 @@ const products = [
     ///runners
     {id: "9", name: "Auriculares Runner JBL", price: 270, category: "Runners" },
     {id: "10", name: "Sennheiser Sport True Wireless", price: 600, category: "Runners" },
-    {id: "11", name: "HUAWEI FreeBuds Pro 2 Azul", price: 300, category: "Runners" },
+    {id: "11", name: "HUAWEI FreeBuds Pro 2", price: 300, category: "Runners" },
     {id: "12", name: "Energy Sistem Earphones Sport 2 True Wireless", price: 150, category: "Runners" },
 ]
 

@@ -1,19 +1,19 @@
-import CartWidget from './CartWidget';
+import "boxicons";
 import styled from 'styled-components';
 import { Link , NavLink } from 'react-router-dom';
-
+import CartWidget from "./CartWidget";
 function Navbar() {
   return (
     <>
      <Navcontainer>
         <h2> 
-            <Link to = "/">Logo</Link>
+            <Link to = "/">Tienda de Auriculares</Link>
         </h2>
         <div>
             <NavLink to ="/category/Inalambricos"> Inalambricos </NavLink>
             <NavLink to ="/category/Gamers"> Gamers </NavLink>
             <NavLink to ="/category/Runners"> Runners </NavLink>
-            <a href='/'><CartWidget/></a>
+            <NavLink><CartWidget/></NavLink>
         </div>
 
      </Navcontainer>
