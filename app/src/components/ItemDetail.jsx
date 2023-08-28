@@ -11,11 +11,11 @@ const ItemDetail = ( {item, isLoading}) => {
     }
 
 
-  return <div>
+  return <div className="item-detail">
      <h1>{item.name}</h1>
      <p>${item.price}</p>
      <p>{item.category}</p>
-     <img src = {item.image} alt= {item.name} ></img>
+     <img src = {item.Image} alt= {item.name} ></img>
    </div>;
     
   
@@ -26,4 +26,4 @@ ItemDetail.propTypes = {
     isLoading: PropTypes.bool,
 }
 
-export default ItemDetail
+export default ItemDetail;

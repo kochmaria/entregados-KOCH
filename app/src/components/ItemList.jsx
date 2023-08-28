@@ -1,31 +1,31 @@
-import styles from "../App.css"
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const ItemList = ({ items }) => {
-  return <div>
-     <h1></h1>
-     <ul>
-        {items.map ((item) => (
-            <li key = {item.id}>
-                <Link to = {`/item/${item.id}`}>
-                 <h3>{item.name}</h3>
-                 <p>${item.price}</p>
-                 <p>{item.category}</p>
-                 <img src = {item.image} alt= {item.name} ></img>
+  return (
+    <div className="container">
+      <div className="row">
+        {items.map((item) => (
+          <div key={item.id} className="col-md-4 mb-4">
+            <div className="card product-card">
+              <img src={item.Image} alt={item.name} className="card-img-top img-fluid" />
+              <div className="card-body">
+                <h3 className="card-title">{item.name}</h3>
+                <p className="card-text">${item.price}</p>
+                <Link to={`/item/${item.id}`} className="btn btn-primary">
+                  Ver Detalles
                 </Link>
-
-            </li>
+              </div>
+            </div>
+          </div>
         ))}
-        
-     </ul>
-  </div>;
-
-
-  
+      </div>
+    </div>
+  );
 };
+
 ItemList.propTypes = {
-    items: propTypes.array.isRequired,
-}
-styles
+  items: PropTypes.array.isRequired,
+};
+
 export default ItemList;

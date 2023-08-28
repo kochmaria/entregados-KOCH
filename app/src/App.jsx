@@ -3,6 +3,7 @@ import { Routes , Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Navbar from "./components/NavBar";
+import "./App.css";
 
 
 
